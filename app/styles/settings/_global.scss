@@ -1,0 +1,22 @@
+///*------------------------------------*\
+//    #GLOBAL
+//\*------------------------------------*/
+
+$brand-color:   #228fce;
+$brand-round:   3px;
+$brand-font:    "Helvetica Neue", Helvetica, Arial, sans-serif;
+$base-round:    $brand-round;
+
+
+// High-level base settings.
+$base-font-size:   13px    !default;
+$base-line-height: 16px    !default;
+
+// These variables are framework variables, sourced from variables defined
+// above. Feel free to use these variables throughout your project, but do not
+// modify or reassign them.
+$base-spacing-unit:           $base-line-height;
+$base-spacing-unit--tiny:     round($base-spacing-unit / 4);
+$base-spacing-unit--small:    round($base-spacing-unit / 2);
+$base-spacing-unit--large:    round($base-spacing-unit * 2);
+$base-spacing-unit--huge:     round($base-spacing-unit * 4);

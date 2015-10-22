@@ -1,0 +1,110 @@
+///*------------------------------------*\
+//    #MIXINS
+//\*------------------------------------*/
+
+
+// Apply ‘attention’ styles in one go.
+@mixin attention($self: false) {
+
+  @if($self != false) {
+
+      &,
+      &:hover,
+      &:active,
+      &:focus {
+          @content;
+      }
+
+  }
+
+  @else {
+
+      &:hover,
+      &:active,
+      &:focus {
+          @content;
+      }
+
+  }
+
+}
+
+// Generate numbered font-weights from their aliases.
+@mixin font-weight($font-weight) {
+
+  @if ($font-weight == "regular") {
+      font-weight: 300;
+  }
+
+  @if ($font-weight == "bold") {
+      font-weight: 600;
+  }
+
+}
+
+// Create all specified heading styles in one go.
+@mixin headings($from: 1, $to: 6) {
+
+  %base-heading {
+      @content;
+  }
+
+  @if $from >= 1 and $to <= 6{
+
+      @for $i from $from through $to{
+
+          h#{$i} {
+              @extend %base-heading;
+          }
+
+      }
+
+  }
+
+}
+
+//Create full width block button
+@mixin responsive-button($breakpoint, $full: true, $large: true) {
+  @include media-query($breakpoint) {
+    @if $full {
+      display: block;
+      width: 100%;
+      box-sizing: border-box;
+    }
+
+    @if $large {
+      @include button-size($padding-large-vertical, $padding-large-horizontal, $font-size-large, $line-height-large, $border-radius-large);
+    }
+  }
+}
+
+/**
+ * Create a striped background from a single colour
+ * Based on: http://lea.verou.me/css3patterns/#diagonal-stripes
+ */
+@mixin bg-striped($base-color, $width, $angle, $contrast: .3) {
+  background-color: $base-color;
+  background-image: repeating-linear-gradient(
+    $angle,
+    transparent,
+    transparent $width,
+    rgba(255,255,255,$contrast) $width,
+    rgba(255,255,255,$contrast) 2 * $width
+  );
+}
+
+/**
+ * Remove default styling on links
+ */
+@mixin unstyled-link() {
+  @include transition(all, 0);
+
+  &,
+  &:hover,
+  &:active {
+    text-decoration: none;
+    color: inherit;
+    border-bottom-width: 0;
+    background-color: transparent;
+  }
+}

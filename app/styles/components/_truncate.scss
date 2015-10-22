@@ -1,0 +1,31 @@
+.truncate {
+  height: #{1 * $inuit-base-line-height / $inuit-base-font-size}em; // 1 lines
+  display: block; /* Fallback for non-webkit */
+  display: -webkit-box;
+  max-width: 100%;
+  margin: 0 auto;
+  @include inuit-font-size($inuit-base-font-size, $inuit-base-line-height);
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.truncate--2 {
+  -webkit-line-clamp: 2;
+  height: #{2 * $inuit-base-line-height / $inuit-base-font-size}em; // 2 lines
+}
+
+.truncate--3 {
+  -webkit-line-clamp: 3;
+  height: #{3 * $inuit-base-line-height / $inuit-base-font-size}em; // 3 lines
+}
+
+.truncate--4 {
+  -webkit-line-clamp: 4;
+  height: #{4 * $inuit-base-line-height / $inuit-base-font-size}em; // 4 lines
+  p {
+    margin: 0;
+  }
+
+}

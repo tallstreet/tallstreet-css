@@ -1,0 +1,27 @@
+///*------------------------------------*\
+//    #INUIT SETTINGS
+//\*------------------------------------*/
+
+
+$inuit-namespace: "";
+
+$inuit-base-font-size:          $base-font-size;
+$inuit-base-line-height:        $base-line-height;
+$inuit-base-text-color:         #787878 !default;
+$inuit-base-background-color:   #fff    !default;
+
+$inuit-base-spacing-unit:           $base-spacing-unit;
+$inuit-base-spacing-unit--tiny:     $base-spacing-unit--tiny;
+$inuit-base-spacing-unit--small:    $base-spacing-unit--small;
+$inuit-base-spacing-unit--large:    $base-spacing-unit--large;
+$inuit-base-spacing-unit--huge:     $base-spacing-unit--huge;
+
+$inuit-list-ui-border-style:  initial;
+$inuit-enable-pack--small: true;
+$inuit-enable-list-ui--small: true;
+$inuit-use-fractions: true;
+$inuit-enable-layout--large: true;
+$inuit-enable-media--rev: true;
+$inuit-enable-media--responsive: true;
+$inuit-enable-layout--small: true;
+$inuit-enable-layout--bottom: true;

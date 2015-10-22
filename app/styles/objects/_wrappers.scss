@@ -1,0 +1,16 @@
+/*------------------------------------*\
+    #WRAPPERS
+\*------------------------------------*/
+
+.wrapper {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding-right: $base-spacing-unit--small;
+    padding-left:  $base-spacing-unit--small;
+
+    @include media-query(lap-and-up) {
+        padding-right: $base-spacing-unit;
+        padding-left:  $base-spacing-unit;
+    }
+
+}

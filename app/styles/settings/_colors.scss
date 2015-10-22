@@ -1,0 +1,34 @@
+///*------------------------------------*\
+//    #COLORS
+//\*------------------------------------*/
+
+$color-grey:        #eaeaea;
+$color-grey-dark:   darken($color-grey, 5%);
+
+$color-black:       #000;
+$color-white:       #fff;
+$color-highlight:   $color-white;
+
+$color-pale-green: #eef7f7;
+
+$color-green:         #22B573;
+$color-green-dark:    darken($color-green, 5%);
+$color-green-darker:  darken($color-green, 15%);
+
+
+$color-headings:    $color-black;
+
+// Page
+$dark-background:     $inuit-base-background-color;
+$light-background:    $color-white;
+
+// Page head
+$color-head-text: $color-white;
+
+// Page foot
+$color-footer-fg: $color-green;
+$color-footer-fg-hover: $color-black;
+
+// Links
+$color-links:           $color-green;
+$color-links-highlight: $color-green-darker;

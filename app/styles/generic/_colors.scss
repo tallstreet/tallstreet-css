@@ -1,0 +1,33 @@
+/*------------------------------------*\
+    #Colors
+\*------------------------------------*/
+
+.site-content {
+  background-color: $color-white;
+}
+
+.site-head__nav, .site-head__subnav {
+  a {
+    color: $color-head-text;
+
+    &:hover, &:active, &:visited, &:link {
+      color: $color-head-text;
+    }
+  }
+}
+
+.site-footer {
+  color: $color-footer-fg;
+
+  a {
+    color: $color-footer-fg;
+
+    &:visited, &:link {
+      color: $color-footer-fg;
+    }
+
+    &:hover, &:active {
+      color: $color-footer-fg-hover;
+    }
+  }
+}
